@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a337c6df-41f6-419b-89e1-5beed0bd891e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/custom_lib/object_judgement.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_lib/object_judgement.py" afterDir="false" />
-    </list>
+    <list default="true" id="a337c6df-41f6-419b-89e1-5beed0bd891e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721317808685</updated>
-      <workItem from="1721317810905" duration="1496000" />
+      <workItem from="1721317810905" duration="2363000" />
     </task>
     <servers />
   </component>
