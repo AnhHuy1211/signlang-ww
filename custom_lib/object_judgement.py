@@ -3,8 +3,8 @@ import numpy as np
 from collections import defaultdict
 from custom_lib.direct_handler import make_dir, join_path, get_file_list
 import tensorflow as tf
-from Tensorflow.models.research.object_detection.utils import config_util
-from Tensorflow.models.research.object_detection.protos import pipeline_pb2
+from object_detection.utils import config_util
+from object_detection.protos import pipeline_pb2
 from google.protobuf import text_format
 from object_detection.builders import model_builder
 from custom_lib import config_tf as cfg
