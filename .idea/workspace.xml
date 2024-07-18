@@ -4496,6 +4496,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\school_proj\signlang_ww" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="signlang_ww" type="Python.FlaskServer">
       <module name="signlang_ww" />
