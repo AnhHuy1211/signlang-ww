@@ -23,6 +23,7 @@ REQUIRED_PACKAGES = [
     'keras',
     'pyparsing==2.4.7',  # TODO(b/204103388)
     'sacrebleu<=2.2.0',  # https://github.com/mjpost/sacrebleu/issues/209
+    'numpy',
     'protobuf==3.20.3',
 ]
 
