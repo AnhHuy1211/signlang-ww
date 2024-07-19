@@ -5,7 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a337c6df-41f6-419b-89e1-5beed0bd891e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Tensorflow/models/research/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/ISSUE_TEMPLATE/00-official-bug-report-issue.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/ISSUE_TEMPLATE/10-official-documentation-issue.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/ISSUE_TEMPLATE/20-official-feature-request-issue.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/ISSUE_TEMPLATE/30-research-bug-report-issue.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/ISSUE_TEMPLATE/40-research-documentation-issue.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/ISSUE_TEMPLATE/50-research-feature-request-issue.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/ISSUE_TEMPLATE/60-questions-help-issue.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/ISSUE_TEMPLATE/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/README_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/bot_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/scripts/pylint.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/workflows/ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/workflows/stale.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/CODEOWNERS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/CODE_OF_CONDUCT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/ISSUES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/SECURITY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/official/projects/deepmac_maskrcnn/serving/detection_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models/official/projects/deepmac_maskrcnn/serving/detection_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/official/projects/volumetric_models/serving/semantic_segmentation_3d_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models/official/projects/volumetric_models/serving/semantic_segmentation_3d_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/official/vision/serving/detection_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models/official/vision/serving/detection_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/official/vision/serving/image_classification_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models/official/vision/serving/image_classification_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/models/research/slim/nets/mobilenet/mobilenet_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models/research/slim/nets/mobilenet/mobilenet_v3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,19 +64,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/school_proj/wiggle-words - Copy",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/school_proj/wiggle-words - Copy&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\school_proj\signlang_ww" />
@@ -86,6 +119,7 @@
       <workItem from="1721317810905" duration="5913000" />
       <workItem from="1721355251820" duration="449000" />
       <workItem from="1721357329025" duration="4356000" />
+      <workItem from="1721362166567" duration="689000" />
     </task>
     <servers />
   </component>
