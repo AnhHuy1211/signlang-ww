@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a337c6df-41f6-419b-89e1-5beed0bd891e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Tensorflow/models/research/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/signlang_ww.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/signlang_ww.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tensorflow/models" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/ISSUE_TEMPLATE/00-official-bug-report-issue.md" beforeDir="false" />
@@ -39,8 +36,7 @@
       <change beforePath="$PROJECT_DIR$/Tensorflow/models/official/vision/serving/detection_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models/official/vision/serving/detection_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tensorflow/models/official/vision/serving/image_classification_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models/official/vision/serving/image_classification_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tensorflow/models/research/slim/nets/mobilenet/mobilenet_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models/research/slim/nets/mobilenet/mobilenet_v3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +69,7 @@
     "Python.app.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/school_proj/wiggle-words - Copy",
+    "last_opened_file_path": "C:/school_proj/signlang-ww",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,6 +81,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\school_proj\signlang-ww" />
       <recent name="C:\school_proj\signlang_ww" />
     </key>
   </component>
@@ -166,7 +163,7 @@
       <workItem from="1721398762882" duration="6722000" />
       <workItem from="1721407389101" duration="640000" />
       <workItem from="1721408063021" duration="5684000" />
-      <workItem from="1721435869100" duration="3370000" />
+      <workItem from="1721435869100" duration="5655000" />
     </task>
     <servers />
   </component>
