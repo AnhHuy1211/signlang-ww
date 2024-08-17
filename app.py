@@ -1,10 +1,11 @@
 from flask import Flask, request, jsonify
 from custom_lib.direct_handler import make_dir, join_path, get_file_list
-from custom_lib.object_judgement import load_model_from_checkpoint, run_inference, categorize_scores, get_final_judgment
+from custom_lib.object_judgement import load_model, run_inference, categorize_scores, get_final_judgment
+from custom_lib import config_tf as cfg
 
 app = Flask(__name__)
 
-model = load_model_from_checkpoint("ckpt-11")
+model = load_model(cfg.EXPORTED_MODEL_PATH)
 THRESHOLDS = [0.9, 0.3]
 
 @app.route('/')

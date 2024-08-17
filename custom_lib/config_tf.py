@@ -13,9 +13,9 @@ COLLECTED_IMAGES = join_path([IMAGES_PATH, "collected_images"])
 TRAIN_IMAGES = join_path([IMAGES_PATH, "train"])
 TEST_IMAGES = join_path([IMAGES_PATH, "test"])
 MODEL_PATH = join_path([WORKSPACE_PATH, "models"])
-EXPORTED_MODEL_PATH = make_dir(join_path([MODEL_PATH, "exported-models"]))
 PRETRAINED_MODEL_PATH = join_path([WORKSPACE_PATH, "pre-trained-models"])
 CUSTOM_MODEL_DIR_NAME = 'my_ssd_mobnet'
+EXPORTED_MODEL_PATH = make_dir(join_path([MODEL_PATH, CUSTOM_MODEL_DIR_NAME, "export", "saved_model", ""]))
 CHECKPOINT_PATH = join_path([MODEL_PATH, "checkpoint"])
 CONFIG_PATH = join_path([MODEL_PATH, CUSTOM_MODEL_DIR_NAME, "pipeline.config"])
 
