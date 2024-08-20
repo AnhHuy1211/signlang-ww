@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a337c6df-41f6-419b-89e1-5beed0bd891e" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Tensorflow/models/research/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/export/checkpoint/checkpoint" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tensorflow/models" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tensorflow/models/.github/ISSUE_TEMPLATE/00-official-bug-report-issue.md" beforeDir="false" />
@@ -37,17 +36,9 @@
       <change beforePath="$PROJECT_DIR$/Tensorflow/models/official/vision/serving/detection_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models/official/vision/serving/detection_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tensorflow/models/official/vision/serving/image_classification_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models/official/vision/serving/image_classification_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tensorflow/models/research/slim/nets/mobilenet/mobilenet_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/models/research/slim/nets/mobilenet/mobilenet_v3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/exported-models/checkpoint/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/exported-models/checkpoint/ckpt-0.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/export/checkpoint/ckpt-0.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/exported-models/checkpoint/ckpt-0.index" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/export/checkpoint/ckpt-0.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/exported-models/pipeline.config" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/export/pipeline.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/exported-models/saved_model/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/export/saved_model/saved_model.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/exported-models/saved_model/variables/variables.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/export/saved_model/variables/variables.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/exported-models/saved_model/variables/variables.index" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/workspace/models/my_ssd_mobnet/export/saved_model/variables/variables.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_lib/config_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_lib/config_tf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom_lib/object_judgement.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_lib/object_judgement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,6 +207,10 @@
       <workItem from="1722257685323" duration="9037000" />
       <workItem from="1722305872956" duration="578000" />
       <workItem from="1723874610925" duration="1772000" />
+      <workItem from="1723880663075" duration="3105000" />
+      <workItem from="1723969510749" duration="10598000" />
+      <workItem from="1723999961160" duration="11490000" />
+      <workItem from="1724122405308" duration="529000" />
     </task>
     <servers />
   </component>

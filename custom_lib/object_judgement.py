@@ -1,63 +1,48 @@
 import cv2
 import numpy as np
 from collections import defaultdict
-from custom_lib.direct_handler import make_dir, join_path, get_file_list
 import tensorflow as tf
-from object_detection.utils import config_util
-from object_detection.protos import pipeline_pb2
-from google.protobuf import text_format
-from object_detection.builders import model_builder
-from custom_lib import config_tf as cfg
+import base64
 
 tf.gfile = tf.io.gfile
+
 
 def load_model(model_path):
     model = tf.saved_model.load(model_path)
     return model
 
 
-def run_inference_single_frame(model, image):
+def process_each_frame(model, image):
     image = np.asarray(image)
     # The input needs to be a tensor, convert it using `tf.convert_to_tensor`.
     input_tensor = tf.convert_to_tensor(image)
     # The model expects a batch of images, so add an axis with `tf.newaxis`.
     input_tensor = input_tensor[tf.newaxis, ...]
-
     # Run inference
-    output_dict = model(input_tensor)
-
-    # All outputs are batches tensors.
-    # Convert to numpy arrays, and take index [0] to remove the batch dimension.
-    # We're only interested in the first num_detections.
-    num_detections = int(output_dict.pop('num_detections'))
-    output_dict = {key: value[0, :num_detections].numpy()
-                   for key, value in output_dict.items()}
-    output_dict['num_detections'] = num_detections
-
-    # detection_classes should be ints.
-    output_dict['detection_classes'] = output_dict['detection_classes'].astype(np.int64)
-
-    return output_dict
+    detection = model(input_tensor)
+    return detection
 
 
-def run_inference(model, src):
+def run_detection(model, src):
     cap = cv2.VideoCapture(src)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     scores = []
+    frames = []
     while cap.isOpened():
         ret, frame = cap.read()
+
         if not ret:
             break
         resized_frame = cv2.resize(frame, (640, 480), interpolation=cv2.INTER_AREA)
         image_np = np.array(resized_frame)
         # Actual detection.
-        output_dict = run_inference_single_frame(model, image_np)
-        if np.any(output_dict['detection_scores'] > 0.1):
-            scores.append(np.max(output_dict["detection_scores"]))
-        if cv2.waitKey(25) & 0xFF == ord('q'):
-            break
+        detection = process_each_frame(model, image_np)
+        if np.any(detection['detection_scores'] > 0.1):
+            scores.append(np.max(detection["detection_scores"]))
+            frames.append(frame)
     cap.release()
-    cv2.destroyAllWindows()
-    return scores
+    return scores, frames
+
 
 def categorize_scores(scores, thresholds):
     if len(scores) == 0:
@@ -90,8 +75,29 @@ def categorize_scores(scores, thresholds):
 def get_final_judgment(judgment: list):
     max_row = max(judgment, key=lambda x: x[2])
     if max_row[0] == 1:
-        return "high"
+        return "high", max_row[2]
     elif max_row[0] == 0:
-        return "potential"
+        return "potential", max_row[2]
     else:
-        return "low"
+        return "low", max_row[2]
+
+
+def extract_frames(scores, frames):
+    scores = np.array(scores)
+    min_index = np.argmin(scores)
+    min_frame = frames[min_index]
+    _, buffer_min = cv2.imencode('.jpg', min_frame)
+    base64_min = base64.b64encode(buffer_min).decode('utf-8')
+
+    max_index = np.argmax(scores)
+    max_frame = frames[max_index]
+    _, buffer_max = cv2.imencode('.jpg', max_frame)
+    base64_max = base64.b64encode(buffer_max).decode('utf-8')
+
+    average = sum(scores) / len(scores)
+    avg_idx = (np.abs(scores - average)).argmin()
+    avg_frame = frames[avg_idx]
+    _, buffer_avg = cv2.imencode('.jpg', avg_frame)
+    base64_avg = base64.b64encode(buffer_avg).decode('utf-8')
+
+    return "data:image/jpeg;base64," + base64_min, "data:image/jpeg;base64," + base64_avg, "data:image/jpeg;base64," + base64_max
